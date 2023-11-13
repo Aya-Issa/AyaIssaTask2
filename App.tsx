@@ -17,7 +17,7 @@ export default function PhotoCaptureScreen() {
       const uri = image.path;
       setImageUri(uri);
 
-      const destinationPath = '/storage/emulated/0/Pictures/'; // Adjust the path as needed
+      const destinationPath = '/storage/emulated/0/Pictures/'; 
 
       const success = await RNFS.moveFile(uri, destinationPath + image.modificationDate + '.jpg');
 
